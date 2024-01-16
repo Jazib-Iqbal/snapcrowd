@@ -43,6 +43,6 @@ tl.to("body", {
 
   //styling of video sect
 
-  var bgvideo = document.querySelector('#BgVideo');
-  bgvideo.muted = true;
-  bgvideo.play();
+  // var bgvideo = document.querySelector('#BgVideo');
+  // // bgvideo.muted = "true";
+  // bgvideo.play();
