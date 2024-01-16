@@ -8891,6 +8891,10 @@ textarea.form-control-lg {
   position: relative;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -8915,7 +8919,7 @@ textarea.form-control-lg {
 .preloader .text-container span {
   color: white;
   text-transform: uppercase;
-  font-family: Raleway-Bold;
+  font-family: Raleway-Bold, sans-serif;
   font-weight: 500;
   font-size: calc(3.5rem + 0.5vw);
 }

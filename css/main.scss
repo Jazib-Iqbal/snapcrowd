@@ -13,14 +13,17 @@
 
 
 //font variables
-$font_family-a: 'Roboto',
-sans-serif;
-$font_family-b: 'Butterfly Kids',
-sans-serif;
+// $font_family-a: 'Roboto',
+// sans-serif;
+// $font_family-b: 'Butterfly Kids',
+// sans-serif;
 
 
 //styling of preloader section
 
+body{
+  font-family: sans-serif;
+}
 
 .preloader {
   position: fixed;
@@ -48,7 +51,7 @@ sans-serif;
     span {
       color: white;
       text-transform: uppercase;
-      font-family: Raleway-Bold;
+      font-family: Raleway-Bold, sans-serif;
       font-weight: 500;
       font-size: calc(3.5rem + .5vw);
     }

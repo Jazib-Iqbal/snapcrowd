@@ -38,3 +38,11 @@ tl.to("body", {
   .to(".preloader", {
     display: "none"
   });
+
+
+
+  //styling of video sect
+
+  var bgvideo = document.querySelector('#BgVideo');
+  bgvideo.muted = true;
+  bgvideo.play();
