@@ -9131,6 +9131,8 @@ body {
 }
 
 .video_sect {
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .video_sect .hero_text-sect {
@@ -9151,14 +9153,13 @@ body {
   content: "";
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
+  inset: 0;
   background: rgb(13, 75, 124);
   background: linear-gradient(90deg, rgb(13, 75, 124) 38%, rgba(116, 177, 224, 0.7455357143) 100%);
 }
 .video_sect video {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 20%;
