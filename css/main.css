@@ -8887,8 +8887,83 @@ textarea.form-control-lg {
   font-family: Raleway-ExtraBold;
   src: url(../fonts/Raleway-ExtraBold.ttf);
 }
+@font-face {
+  font-family: roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(../fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: roboto-regular;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
 .ps_r {
   position: relative;
+}
+
+.transition_action {
+  transition: all 0.3s linear;
+}
+
+.heading_sect .heading_main {
+  margin-bottom: 1rem;
+}
+.heading_sect .heading_main small {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 30%;
+  color: #c2e1f9;
+}
+.heading_sect p {
+  font-family: roboto-regular, sans-serif;
+  font-size: calc(0.9rem + 0.5vw);
+}
+
+.btn_bordered {
+  border: 1px solid #74B1E0;
+  box-shadow: #ffffff 0 0 5px;
+  color: #ffffff;
+  text-transform: capitalize;
+  font-size: calc(0.5rem + 0.5vw);
+  overflow: hidden;
+}
+.btn_bordered::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: #ffffff;
+  transform: translateY(100%);
+  transition: all 0.2s linear;
+  z-index: -1;
+}
+.btn_bordered:hover {
+  box-shadow: #000000 0 0 10px;
+  color: initial;
+}
+.btn_bordered:hover::after {
+  transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+  .btn_bordered {
+    font-size: calc(1rem + 0.5vw);
+  }
+}
+.contact_body {
+  background-color: #0D4B7C;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contact_heading {
+  color: #ffffff;
+  margin: 3rem 0;
+}
+
+a {
+  overflow: hidden;
 }
 
 body {
@@ -9051,6 +9126,10 @@ body {
   box-shadow: 0 0 0 0;
 }
 
+.hero_text-sect p {
+  margin-bottom: 3rem;
+}
+
 .video_sect {
   overflow: hidden;
 }
@@ -9062,7 +9141,7 @@ body {
   z-index: 10;
   color: white;
 }
-.video_sect .hero_text-sect .hero_text {
+.video_sect .hero_text-sect .heading_main {
   text-transform: capitalize;
   font-size: calc(4rem + 0.5vw);
   font-family: Raleway-Bold;
@@ -9072,7 +9151,8 @@ body {
   content: "";
   top: 0;
   left: 0;
-  inset: 0;
+  width: 100%;
+  height: 100vh;
   background: rgb(13, 75, 124);
   background: linear-gradient(90deg, rgb(13, 75, 124) 38%, rgba(116, 177, 224, 0.7455357143) 100%);
 }
@@ -9095,7 +9175,10 @@ body {
   .video_sect video {
     margin-left: 0;
   }
-  .video_sect .hero_text-sect .hero_text {
-    font-size: calc(3rem + 0.5vw);
+  .video_sect .hero_text-sect .heading_main {
+    font-size: calc(2rem + 0.5vw);
+  }
+  .video_sect .hero_text-sect .heading_main small {
+    font-size: 40%;
   }
 }/*# sourceMappingURL=main.css.map */
