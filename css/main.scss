@@ -329,18 +329,16 @@ body{
   border-top-color: lighten($color: $theme-dark-blue, $amount: 10%);
   border-bottom-color: lighten($color: $theme-dark-blue, $amount: 10%);
 
-  h2 {
-      // text-fill-color: transparent;
-      // text-stroke: 2px black;
+  h2{
+
       font-size: 5rem;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke: 3px $theme-dark-blue;
-      // box-shadow: inset 0 0 5px 5px olive;
       -moz-text-fill-color: transparent;
       text-transform: capitalize;
       font-size: calc(3rem + 1vw);
-    white-space: nowrap;
-    transform: translateX(100%);
+      white-space: nowrap;
+      transform: translateX(100%);
   }
 }
 
@@ -389,28 +387,9 @@ body{
     }
   }
 
-  //styling of company_slogan section
 
-  .company_slogan {
-    overflow: hidden;
-    border-top: 3px solid;
-    border-bottom: 3px solid;
-    border-top-color: lighten($color: $theme-dark-blue, $amount: 10%);
-    border-bottom-color: lighten($color: $theme-dark-blue, $amount: 10%);
+
   
-    h2 {
-        // text-fill-color: transparent;
-        // text-stroke: 2px black;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 3px $theme-dark-blue;
-        // box-shadow: inset 0 0 5px 5px olive;
-        -moz-text-fill-color: transparent;
-        text-transform: capitalize;
-      font-size: calc(3rem + 1vw);
-      white-space: nowrap;
-      transform: translateX(100%);
-    }
-  }
 }
 
 
