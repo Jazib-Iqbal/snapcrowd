@@ -9273,4 +9273,7 @@ body {
   .video_sect .hero_text-sect .heading_main small {
     font-size: 40%;
   }
+  .company_slogan h2 {
+    font-size: calc(5.5rem + 1vw);
+  }
 }/*# sourceMappingURL=main.css.map */
