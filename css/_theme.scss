@@ -42,6 +42,32 @@
     transition: all .3s linear;
 }
 
+.sec_space{
+    padding: 2rem 0;
+}
+.border_bottom{
+    border-bottom: 2px solid $theme-dark-blue;
+    padding-bottom: 1.5rem;
+}
+
+.width_full{
+    width: 100%;
+}
+
+.vertical_align{
+    align-items: center;
+}
+
+.sub_heading{
+    font-family: Raleway-Medium, sans-serif;
+    font-size: calc(1.5rem + .5vw);
+    color: $theme-dark-blue;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+
+}
+
 .heading_sect{
     .heading_main{
         margin-bottom: 1rem;

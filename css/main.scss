@@ -23,7 +23,7 @@
 //styling of preloader section
 
 body{
-  font-family: sans-serif;
+  font-family: roboto-regular, sans-serif;
 }
 
 .preloader {
@@ -261,10 +261,89 @@ body{
   }
 }
 
+//styling of intro_sect section
+
+.intro_image{
+
+  picture{
+    z-index: 1;
+    display: block;
+    &::after{
+      content: '';
+      position: absolute;
+      inset: 0;
+      // width: 90%;
+      // height: 90%;
+      top: 0;
+      left: 0;
+      // border:  solid lighten($color: $theme-dark-blue, $amount: 60%);
+      outline: 5px solid $theme-dark-blue;
+      outline-offset: -25px;
+      z-index: -1;
+      // -webkit-animation: simple-move 2s  linear infinite alternate;
+      transform: translate(-2px, 5px);
+      animation: simple-move 1.75s linear infinite;
+    }
+  }
+}
 
 
 
+@keyframes simple-move {
+  0% {
+    outline: 8px solid rgba($color: $theme-dark-blue, $alpha: 1);
+    // outline: 5px solid black;
+    // border: 5px solid ;
+    transform: translate(-2px, 0px);
+    // box-shadow: inset 0 0 25px;
+    
+    
+  }
 
+  50% {
+    outline: 12px solid rgba($color: $theme-dark-blue, $alpha: .7);
+    // border: 10px solid;
+    transform: translate(8px, 5px);
+    // outline: 15px solid ;
+    // box-shadow: inset 0 0 30px;
+  }
+
+  100% {
+    outline: 8px solid rgba($color: $theme-dark-blue, $alpha: 1);
+    // outline: 5px solid black;
+    // border: 5px solid ;
+    transform: translate(-2px, 0px);
+    // box-shadow: inset 0 0 25px;
+  }
+}
+
+.intro_sect{
+  background-color: lighten($color: $theme-dark-blue, $amount: 60%);
+}
+
+.intro_text{
+  strong{
+    color: lighten($color: #000000, $amount: 30%);
+    
+  }
+}
+
+
+//styling of company_slogan section
+
+.company_slogan {
+  overflow: hidden;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-top-color: lighten($color: $black, $amount: 30%);
+  border-bottom-color: lighten($color: $black, $amount: 30%);
+
+  h2 {
+    font-size: 5rem;
+    white-space: nowrap;
+    transform: translateX(100%);
+  }
+}
 
 
 
