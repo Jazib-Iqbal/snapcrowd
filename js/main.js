@@ -41,11 +41,6 @@ tl.to("body", {
 
 
 
-  //styling of video sect
-
-  var bgvideo = document.querySelector('#BgVideo');
-  // bgvideo.muted = "true";
-  bgvideo.play();
 
 
   // styling for scrolling text in company_slogen section
@@ -54,7 +49,7 @@ tl.to("body", {
     duration: .5,
     
     // width: "100%",
-    x: -1400,
+    x: -2100,
     scrollTrigger: {
         trigger: ".company_slogan",
         start: "top 80%",

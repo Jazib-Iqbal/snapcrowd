@@ -185,7 +185,11 @@ body{
   z-index: 100;
 }
 
-
+.navbar{
+  .container-fluid{
+    padding: 0;
+  }
+}
 
 .navbar-brand {
   img {
@@ -333,15 +337,32 @@ body{
 
 .company_slogan {
   overflow: hidden;
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-top-color: lighten($color: $black, $amount: 30%);
-  border-bottom-color: lighten($color: $black, $amount: 30%);
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  border-top-color: lighten($color: $theme-dark-blue, $amount: 10%);
+  border-bottom-color: lighten($color: $theme-dark-blue, $amount: 10%);
 
   h2 {
-    font-size: 5rem;
+      // text-fill-color: transparent;
+      // text-stroke: 2px black;
+      font-size: 5rem;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 3px $theme-dark-blue;
+      // box-shadow: inset 0 0 5px 5px olive;
+      -moz-text-fill-color: transparent;
+      text-transform: capitalize;
+    font-size: calc(6rem + 1vw);
     white-space: nowrap;
     transform: translateX(100%);
+  }
+}
+
+
+@media(max-width: 992px) {
+  .intro_sect{
+    [class*="col-"]{
+      padding: 1rem 12px;
+    }
   }
 }
 
@@ -375,8 +396,11 @@ body{
 
   .video_sect .hero_text-sect .heading_main {
     font-size: calc(2rem + .5vw);
+    
     small{
       font-size: 40%;
     }
   }
 }
+
+
