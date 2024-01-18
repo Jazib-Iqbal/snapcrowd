@@ -276,8 +276,6 @@ body{
       content: '';
       position: absolute;
       inset: 0;
-      // width: 90%;
-      // height: 90%;
       top: 0;
       left: 0;
       // border:  solid lighten($color: $theme-dark-blue, $amount: 60%);
@@ -296,28 +294,17 @@ body{
 @keyframes simple-move {
   0% {
     outline: 8px solid rgba($color: $theme-dark-blue, $alpha: 1);
-    // outline: 5px solid black;
-    // border: 5px solid ;
-    transform: translate(-2px, 0px);
-    // box-shadow: inset 0 0 25px;
-    
-    
+    transform: translate(-2px, 0px); 
   }
 
   50% {
     outline: 12px solid rgba($color: $theme-dark-blue, $alpha: .7);
-    // border: 10px solid;
     transform: translate(8px, 5px);
-    // outline: 15px solid ;
-    // box-shadow: inset 0 0 30px;
   }
 
   100% {
     outline: 8px solid rgba($color: $theme-dark-blue, $alpha: 1);
-    // outline: 5px solid black;
-    // border: 5px solid ;
     transform: translate(-2px, 0px);
-    // box-shadow: inset 0 0 25px;
   }
 }
 
@@ -351,7 +338,7 @@ body{
       // box-shadow: inset 0 0 5px 5px olive;
       -moz-text-fill-color: transparent;
       text-transform: capitalize;
-    font-size: calc(6rem + 1vw);
+      font-size: calc(3rem + 1vw);
     white-space: nowrap;
     transform: translateX(100%);
   }
@@ -381,24 +368,47 @@ body{
   .navbar-brand img {
     width: calc(10rem + 2vw);
     transform: translateY(-3px);
-}
-
-//styling of video_sect
-
-.video_sect{
-
-
-  video {
-    margin-left: 0;
   }
 
-}
+  //styling of video_sect
+
+  .video_sect{
+
+
+   video {
+     margin-left: 0;
+   }
+
+  }
 
   .video_sect .hero_text-sect .heading_main {
     font-size: calc(2rem + .5vw);
     
     small{
       font-size: 40%;
+    }
+  }
+
+  //styling of company_slogan section
+
+  .company_slogan {
+    overflow: hidden;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-top-color: lighten($color: $theme-dark-blue, $amount: 10%);
+    border-bottom-color: lighten($color: $theme-dark-blue, $amount: 10%);
+  
+    h2 {
+        // text-fill-color: transparent;
+        // text-stroke: 2px black;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 3px $theme-dark-blue;
+        // box-shadow: inset 0 0 5px 5px olive;
+        -moz-text-fill-color: transparent;
+        text-transform: capitalize;
+      font-size: calc(3rem + 1vw);
+      white-space: nowrap;
+      transform: translateX(100%);
     }
   }
 }

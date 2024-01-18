@@ -9246,7 +9246,7 @@ body {
   -webkit-text-stroke: 3px #0D4B7C;
   -moz-text-fill-color: transparent;
   text-transform: capitalize;
-  font-size: calc(6rem + 1vw);
+  font-size: calc(3rem + 1vw);
   white-space: nowrap;
   transform: translateX(100%);
 }
@@ -9272,5 +9272,21 @@ body {
   }
   .video_sect .hero_text-sect .heading_main small {
     font-size: 40%;
+  }
+  .company_slogan {
+    overflow: hidden;
+    border-top: 3px solid;
+    border-bottom: 3px solid;
+    border-top-color: #1267aa;
+    border-bottom-color: #1267aa;
+  }
+  .company_slogan h2 {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #0D4B7C;
+    -moz-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-size: calc(3rem + 1vw);
+    white-space: nowrap;
+    transform: translateX(100%);
   }
 }/*# sourceMappingURL=main.css.map */
