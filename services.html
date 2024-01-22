@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page</title>
+    <style>
+        .service-description {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Services</h1>
+
+    <ul>
+        <li><a href="javascript:void(0);" onclick="showDescription('contentCreation')">Content Creation</a></li>
+        <li><a href="javascript:void(0);" onclick="showDescription('webDevelopment')">Web Development</a></li>
+        <li><a href="javascript:void(0);" onclick="showDescription('seo')">SEO</a></li>
+    </ul>
+
+    <!-- <div id="contentCreation" class="service-description">
+        <h2>Content Creation</h2>
+        <p>This section contains information about our content creation services.</p>
+        <p>Insert your detailed content creation description here.</p>
+    </div>
+
+    <div id="webDevelopment" class="service-description">
+        <h2>Web Development</h2>
+        <p>This section contains information about our web development services.</p>
+        <p>Insert your detailed web development description here.</p>
+    </div>
+
+    <div id="seo" class="service-description">
+        <h2>SEO</h2>
+        <p>This section contains information about our SEO services.</p>
+        <p>Insert your detailed SEO description here.</p>
+    </div> -->
+
+    <script>
+        function showDescription(serviceId) {
+            // Hide all service descriptions
+            var descriptions = document.getElementsByClassName('service-description');
+            for (var i = 0; i < descriptions.length; i++) {
+                descriptions[i].style.display = 'none';
+            }
+
+            // Show the selected service description
+            var selectedDescription = document.getElementById(serviceId);
+            if (selectedDescription) {
+                selectedDescription.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>

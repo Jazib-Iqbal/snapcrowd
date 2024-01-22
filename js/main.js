@@ -41,6 +41,21 @@ tl.to("body", {
 
 
 
+//styling of overlaying section
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.utils.toArray(".panel").forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top", 
+    pin: true, 
+    pinSpacing: false 
+  });
+});
+
+
+
 
 
   // styling for scrolling text in company_slogen section
@@ -58,3 +73,7 @@ tl.to("body", {
         
     }
   })
+
+
+
+
