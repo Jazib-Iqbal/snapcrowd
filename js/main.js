@@ -43,16 +43,16 @@ tl.to("body", {
 
 //styling of overlaying section
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
-gsap.utils.toArray(".panel").forEach((panel, i) => {
-  ScrollTrigger.create({
-    trigger: panel,
-    start: "top top", 
-    pin: true, 
-    pinSpacing: false 
-  });
-});
+// gsap.utils.toArray(".panel").forEach((panel, i) => {
+//   ScrollTrigger.create({
+//     trigger: panel,
+//     start: "top top", 
+//     pin: true, 
+//     pinSpacing: false 
+//   });
+// });
 
 
 
@@ -76,4 +76,43 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
 
 
 
-
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top
+          }, 700);
+          return false;
+        }
+      }
+    });
+  });
+  
+  /*
+    Back to top scroll button. The following code is from
+    http://jsfiddle.net/gilbitron/Lt2wH/
+  */
+  if ($('#back-to-top').length) {
+    var scrollTrigger = 100, // px
+      backToTop = function() {
+        var scrollTop = $(window).scrollTop();
+        if (scrollTop > scrollTrigger) {
+          $('#back-to-top').addClass('show');
+        } else {
+          $('#back-to-top').removeClass('show');
+        }
+      };
+    backToTop();
+    $(window).on('scroll', function() {
+      backToTop();
+    });
+    $('#back-to-top').on('click', function(e) {
+      e.preventDefault();
+      $('html,body').animate({
+        scrollTop: 0
+      }, 700);
+    });
+  }
