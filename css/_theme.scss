@@ -1,37 +1,42 @@
 @font-face {
-    font-family: Raleway-Regular;
-    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: BrandonText-Regular;
+    src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
 
 }
-@font-face {
-    font-family: Raleway-Medium;
-    src: url(../fonts/Raleway-Medium.ttf);
-}
+// @font-face {
+//     font-family: Raleway-Medium;
+//     src: url(../fonts/Raleway-Medium.ttf);
+// }
 
-@font-face {
-    font-family: Raleway-Bold;
-    src: url(../fonts/Raleway-Bold.ttf);
-}
+// @font-face {
+//     font-family: Raleway-Bold;
+//     src: url(../fonts/Raleway-Bold.ttf);
+// }
 
-@font-face {
-    font-family: Raleway-ExtraBold;
-    src: url(../fonts/Raleway-ExtraBold.ttf);
-}
+// @font-face {
+//     font-family: Raleway-ExtraBold;
+//     src: url(../fonts/Raleway-ExtraBold.ttf);
+// }
 
 
-@font-face {
-    font-family: roboto-Bold;
-    src: url(../fonts/Roboto-Bold.ttf);
-}
+// @font-face {
+//     font-family: roboto-Bold;
+//     src: url(../fonts/Roboto-Bold.ttf);
+// }
 
-@font-face {
-    font-family: roboto-medium;
-    src: url(../fonts/Roboto-Medium.ttf);
-}
+// @font-face {
+//     font-family: roboto-medium;
+//     src: url(../fonts/Roboto-Medium.ttf);
+// }
 
-@font-face {
-    font-family: roboto-regular;
-    src: url(../fonts/Roboto-Regular.ttf);
+// @font-face {
+//     font-family: roboto-regular;
+//     src: url(../fonts/Roboto-Regular.ttf);
+// }
+
+
+body{
+    font-family: BrandonText-Regular, sans-serif;
 }
 
 .ps_r{
@@ -74,14 +79,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    // min-height: 100vh;
     width: 100%;
     padding: 2rem 0;
-    // background-color: green!important;
 }
 
 .sub_heading{
-    font-family: Raleway-Medium, sans-serif;
+    font-family: BrandonText-Regular, sans-serif;
     font-size: calc(1.5rem + .5vw);
     color: $theme-dark-blue;
     font-weight: 600;
@@ -102,7 +105,7 @@
     }
 
     p{
-        font-family: roboto-regular, sans-serif;
+        font-family: BrandonText-Regular, sans-serif;
         font-size: calc(.9rem + .5vw);
     }
 }
