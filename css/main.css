@@ -9287,8 +9287,8 @@ body {
 .first-wrap {
   height: 100%;
   width: 100%;
-  background: #ffffff url("../img/chess-blue.jpeg");
-  background-position: fixed;
+  background-image: url("../img/chess-blue.jpeg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -9298,8 +9298,8 @@ body {
 .second-wrap {
   height: 100%;
   width: 100vw;
-  background: #ffffff url("../img/services-bg.jpeg");
-  background-position: fixed;
+  background-image: url("../img/services-bg.jpeg");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -9309,8 +9309,8 @@ body {
 .third-wrap {
   height: 100%;
   width: 100vw;
-  background: #ffffff url("../img/client-model.png");
-  background-position: fixed;
+  background-image: url("../img/client-model.png");
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
