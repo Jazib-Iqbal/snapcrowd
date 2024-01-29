@@ -413,12 +413,13 @@ body{
 
 .first-wrap {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-image: url("../img/chess-blue.jpeg");
   background-attachment: fixed;
   background-repeat: no-repeat;
    background-size: cover;
    background-position: 50% 50%;
+   -webkit-background-attachment: local; 
 }
 /* Second Wrap Background */
 
@@ -430,6 +431,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-background-attachment: local; 
 }
 /* Third Wrap Background */
 
@@ -441,6 +443,7 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-background-attachment: local; 
 }
 
 .first-div {
