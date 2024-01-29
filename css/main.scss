@@ -425,7 +425,9 @@ body{
 .second-wrap {
   height: 100%;
   width: 100vw;
-  background: #ffffff url("../img/services-bg.jpeg") no-repeat fixed;
+  background: #ffffff url("../img/services-bg.jpeg");
+  background-position: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
@@ -434,7 +436,9 @@ body{
 .third-wrap {
   height: 100%;
   width: 100vw;
-  background: #ffffff url("../img/client-model.png") no-repeat fixed;
+  background: #ffffff url("../img/client-model.png");
+  background-position: fixed;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
