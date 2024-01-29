@@ -9286,7 +9286,7 @@ body {
 /* First Wrap Background */
 .first-wrap {
   height: 100%;
-  width: 100vw;
+  width: 100%;
   background: #ffffff url("../img/chess-blue.jpeg") no-repeat fixed;
   background-size: cover;
   background-position: 50% 50%;
@@ -9322,7 +9322,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: calc(1.5rem + 0.5vw);
