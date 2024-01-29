@@ -9286,12 +9286,16 @@ body {
 /* First Wrap Background */
 .first-wrap {
   height: 100%;
-  width: 100%;
+  width: 100vw;
   background-image: url("../img/chess-blue.jpeg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-background-attachment: local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Second Wrap Background */
@@ -9299,10 +9303,14 @@ body {
   height: 100%;
   width: 100vw;
   background-image: url("../img/services-bg.jpeg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-background-attachment: local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Third Wrap Background */
@@ -9310,10 +9318,14 @@ body {
   height: 100%;
   width: 100vw;
   background-image: url("../img/client-model.png");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
+  -webkit-background-attachment: local;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .first-div {
