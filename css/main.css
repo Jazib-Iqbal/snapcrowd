@@ -9303,7 +9303,7 @@ body {
   height: 100%;
   width: 100vw;
   background-image: url("../img/services-bg.jpeg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -9318,7 +9318,7 @@ body {
   height: 100%;
   width: 100vw;
   background-image: url("../img/client-model.png");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
