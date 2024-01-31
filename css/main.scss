@@ -594,7 +594,7 @@ body{
 .second-div {
   display: table;
   height: 50vh;
-  // width: 100vw;
+  width: 100%;
   background-color: rgba(237, 239, 246, 0.7);
   
   p {
@@ -619,7 +619,7 @@ body{
 .fourth-div {
   display: table;
   height: 50vh;
-  // width: 100vw;
+  width: 100%;
   background-color: rgba(225, 225, 225, 0.5);
   p {
     display: table-cell;
