@@ -4,8 +4,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -8978,7 +8976,7 @@ body {
   }
 }
 body {
-  font-family: roboto-regular, sans-serif;
+  font-family: BrandonText-Regular, sans-serif;
 }
 
 .preloader {
@@ -9225,6 +9223,7 @@ body {
   border-bottom: 3px solid;
   border-top-color: #1267aa;
   border-bottom-color: #1267aa;
+  background-color: #ffffff;
 }
 .company_slogan h2 {
   font-size: 5rem;
@@ -9254,8 +9253,103 @@ body {
   margin: 0 auto;
 }
 
-.company_intro {
+.inner {
+  min-height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+
+.fixed1 {
+  width: 100%;
   overflow-x: hidden;
+}
+
+.fixed2 {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.fixed3 {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.fixed1, .panel-1 {
+  background: url("../img/chess-blue.jpeg") no-repeat 50% 50%;
+}
+
+.fixed2, .panel-2 {
+  background: url("../img/services-bg.jpeg") no-repeat 50% 50%;
+}
+
+.fixed3, .panel-3 {
+  background: url("../img/modal5.png") no-repeat 50% 50%;
+}
+
+.panel {
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.touch .panel {
+  background: none;
+}
+
+/*
+.fixedBG {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	background-size:cover;
+	z-index:-1;
+	opacity:0;
+  display:none;
+	transition:opacity .5s ease;
+}
+*/
+/* IOS  bounce - on first scroll ios slides element a little and leaves a gap so I've oversized it a little to make it smoother*/
+.fixedBG {
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -10vh;
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  transform: translateY(-10vh);
+}
+
+.touch .fixedBG {
+  display: block;
+}
+
+.fixedON {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1320px) {
+  .panel {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 680px) {
+  h1 {
+    font-size: 1.8rem;
+    padding: 0.3em;
+  }
+}
+.abc {
+  background-color: #ffffff;
 }
 
 .intro_items {
@@ -9288,14 +9382,11 @@ body {
   height: 100%;
   width: 100vw;
   background-image: url("../img/chess-blue.jpeg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
   -webkit-background-attachment: local;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 /* Second Wrap Background */
@@ -9308,9 +9399,6 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   -webkit-background-attachment: local;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 /* Third Wrap Background */
@@ -9323,15 +9411,11 @@ body {
   background-size: cover;
   background-position: 50% 50%;
   -webkit-background-attachment: local;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 }
 
 .first-div {
   position: relative;
   height: 100vh;
-  width: 100vw;
   background-color: transparent;
 }
 .first-div .first-inner-div {
@@ -9363,7 +9447,6 @@ body {
 .second-div {
   display: table;
   height: 50vh;
-  width: 100vw;
   background-color: rgba(237, 239, 246, 0.7);
 }
 .second-div p {
@@ -9380,14 +9463,12 @@ body {
 .third-div {
   display: table;
   height: 50vh;
-  width: 100vw;
   background-color: transparent;
 }
 
 .fourth-div {
   display: table;
   height: 50vh;
-  width: 100vw;
   background-color: rgba(225, 225, 225, 0.5);
 }
 .fourth-div p {
