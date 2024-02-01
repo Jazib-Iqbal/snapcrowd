@@ -8870,11 +8870,11 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: BrandonText-Regular;
-  src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
+  font-family: DancingScript-Regular;
+  src: url(../fonts/DancingScript-Regular.ttf);
 }
 body {
-  font-family: BrandonText-Regular, sans-serif;
+  font-family: DancingScript-Regular, sans-serif;
 }
 
 .ps_r {
@@ -8924,7 +8924,7 @@ body {
 }
 
 .sub_heading {
-  font-family: BrandonText-Regular, sans-serif;
+  font-family: DancingScript-Regular, sans-serif;
   font-size: calc(1.5rem + 0.5vw);
   color: #0D4B7C;
   font-weight: 600;
@@ -8941,7 +8941,7 @@ body {
   color: #c2e1f9;
 }
 .heading_sect p {
-  font-family: BrandonText-Regular, sans-serif;
+  font-family: DancingScript-Regular, sans-serif;
   font-size: calc(0.9rem + 0.5vw);
 }
 
@@ -8976,7 +8976,7 @@ body {
   }
 }
 body {
-  font-family: BrandonText-Regular, sans-serif;
+  font-family: DancingScript-Regular, sans-serif;
 }
 
 .preloader {
@@ -9159,7 +9159,7 @@ body {
 .video_sect .hero_text-sect .heading_main {
   text-transform: capitalize;
   font-size: calc(4rem + 0.5vw);
-  font-family: Raleway-Bold;
+  font-family: DancingScript-Regular;
 }
 .video_sect::after {
   position: absolute;
