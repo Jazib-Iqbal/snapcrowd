@@ -28,9 +28,9 @@
 
 //styling of preloader section
 
-body{
-  font-family: DancingScript-Regular, sans-serif;
-}
+// body{
+//   font-family: DancingScript-Regular, sans-serif;
+// }
 
 .preloader {
   position: fixed;
@@ -237,12 +237,12 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    color: white;
+    color: white!important;
 
     .heading_main {
       text-transform: capitalize;
       font-size: calc(4rem + .5vw);
-      font-family: DancingScript-Regular;
+      // font-family: DancingScript-Regular;
     }
 
   }
@@ -378,16 +378,10 @@ body{
 
 
 
-
-
-
 .inner{
   min-height:100vh;
-	// max-width:1280px;
 	margin:auto;
-	// padding:20px;
   overflow: hidden;
-	// background:rgba(255,255,255, 0.5);
 	position:relative;
   border-bottom:1px solid #000;
 }
@@ -406,12 +400,15 @@ body{
   width: 100%;
   overflow-x: hidden;
 }
+
 .fixed1,.panel-1 {
 	background:url('../img/chess-blue.jpeg') no-repeat 50% 50%;
 }
+
 .fixed2,.panel-2 {
 	background:url('../img/services-bg.jpeg') no-repeat 50% 50%;
 }
+
 .fixed3,.panel-3 {
 	background:url('../img/modal5.png') no-repeat 50% 50%;
 }
@@ -421,20 +418,7 @@ body{
 }
 .touch .panel{background:none;}
 /*
-.fixedBG {
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	width:100%;
-	background-size:cover;
-	z-index:-1;
-	opacity:0;
-  display:none;
-	transition:opacity .5s ease;
-}
-*/
+
 /* IOS  bounce - on first scroll ios slides element a little and leaves a gap so I've oversized it a little to make it smoother*/
 .fixedBG {
 	position:fixed;
@@ -462,18 +446,6 @@ body{
 @media screen and (max-width:680px){
 	h1{font-size:1.8rem;padding:.3em}	
 }
-
-
-
-
-.abc{
-  background-color: $white;
-}
-
-
-
-
-
 
 
 
@@ -633,56 +605,6 @@ body{
   }
 }
 
-.body_bg{
-  backdrop-filter: blur(.5rem);
-  color: #0D4B7C;
-}
-.fifth-div {
-  display: table;
-  height: 50vh;
-  width: 100vw;
-  background-color: transparent;
-}
-
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 9999;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  line-height: 30px;
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  cursor: pointer;
-  border: 0;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: opacity 0.2s ease-out;
-  opacity: 0;
-}
-
-#back-to-top:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-}
-
-#back-to-top.show {
-  opacity: 1;
-}
-
-
-
-/* NEW UPDATE */
-.new-update {
-  padding: 20px;
-  text-align: center;
-  
-}
-
-
-
 
 .company_intro-item{
   margin-bottom: 1.5rem;
@@ -712,16 +634,111 @@ body{
   
 }
 
-// @supports not (-webkit-text-stroke: 1px #000) {
-//   .title {
-//     text-shadow:
-//        3px  3px 0 #000,
-//       -1px -1px 0 #000,  
-//        1px -1px 0 #000,
-//       -1px  1px 0 #000,
-//        1px  1px 0 #000;
-//   }
-// }
+
+
+//styling of case study section
+
+.case_study-sect{
+  text-align: center;
+  h2{
+    font-size: calc(1rem + .5vw);
+    color: $theme-dark-blue;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  p{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+  }
+}
+
+.case_study-inner{
+  background-color: $white;
+  flex-wrap: wrap;
+}
+
+.case_study-col{
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.case_study-col{
+  width: 25%;
+  padding: .5rem;
+}
+
+.case_card-a, .case_card-b{
+  display: inline-block;
+  
+  background-color: lighten($color: $theme-dark-blue, $amount: 50%);
+  width: 100%;
+  overflow: hidden;
+  
+
+  &:before, &:after{
+    transition: all .3s linear;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    transform: translate(0);
+    left: 0;
+  }
+
+
+  &:before{
+    content: '';
+    background: rgb(13,75,124);
+    background: linear-gradient(0deg, rgba(13,75,124,0.8267682072829132) 31%, rgba(0,0,0,0.11248249299719892) 95%);
+  }
+
+
+  &:after{
+    visibility: hidden;
+    content: 'casestudy';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(2.5rem + .5vw);
+    
+    
+  }
+
+  &:hover{
+
+    
+
+     &:after{
+        visibility: visible!important;
+        color: $white;
+        backdrop-filter: blur(10px);
+    }
+
+  }
+}
+
+
+.case_card-a{
+  height: 300px;
+  overflow: hidden;
+  
+}
+
+
+
+
+.case_card-b{
+  height: 400px;
+  overflow: hidden;
+  
+}
+
+
+
+
 
 
 @media(max-width: 992px) {
@@ -740,6 +757,12 @@ body{
     width: 100vw;
     background-size: cover;
     background-position: right;
+  }
+
+    //styling of case_study section
+
+  .case_study-col{
+    width: 50%;
   }
 
 }
@@ -800,6 +823,12 @@ body{
 
   .first-div .first-inner-div p{
     font-size: calc(2rem + .5vw);
+  }
+
+  //styling of case_study section
+
+  .case_study-col{
+    width: 100%;
   }
 
   

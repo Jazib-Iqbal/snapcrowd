@@ -8870,11 +8870,19 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: DancingScript-Regular;
-  src: url(../fonts/DancingScript-Regular.ttf);
+  font-family: BrandonText-Regular;
+  src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
 }
 body {
-  font-family: DancingScript-Regular, sans-serif;
+  font-family: BrandonText-Regular, sans-serif;
+}
+
+.heading_sect {
+  text-align: left;
+}
+.heading_sect h2 {
+  font-size: calc(1.5rem + 0.5vw);
+  text-transform: uppercase;
 }
 
 .ps_r {
@@ -8924,11 +8932,23 @@ body {
 }
 
 .sub_heading {
-  font-family: DancingScript-Regular, sans-serif;
   font-size: calc(1.5rem + 0.5vw);
   color: #0D4B7C;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.ps_absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img_object-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .heading_sect .heading_main {
@@ -8941,7 +8961,6 @@ body {
   color: #c2e1f9;
 }
 .heading_sect p {
-  font-family: DancingScript-Regular, sans-serif;
   font-size: calc(0.9rem + 0.5vw);
 }
 
@@ -8975,10 +8994,6 @@ body {
     font-size: calc(1rem + 0.5vw);
   }
 }
-body {
-  font-family: DancingScript-Regular, sans-serif;
-}
-
 .preloader {
   position: fixed;
   top: 0;
@@ -9154,12 +9169,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  color: white;
+  color: white !important;
 }
 .video_sect .hero_text-sect .heading_main {
   text-transform: capitalize;
   font-size: calc(4rem + 0.5vw);
-  font-family: DancingScript-Regular;
 }
 .video_sect::after {
   position: absolute;
@@ -9299,20 +9313,7 @@ body {
 }
 
 /*
-.fixedBG {
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	width:100%;
-	background-size:cover;
-	z-index:-1;
-	opacity:0;
-  display:none;
-	transition:opacity .5s ease;
-}
-*/
+
 /* IOS  bounce - on first scroll ios slides element a little and leaves a gap so I've oversized it a little to make it smoother*/
 .fixedBG {
   position: fixed;
@@ -9348,10 +9349,6 @@ body {
     padding: 0.3em;
   }
 }
-.abc {
-  background-color: #ffffff;
-}
-
 .intro_items {
   text-align: center;
 }
@@ -9483,53 +9480,6 @@ body {
   text-transform: uppercase;
 }
 
-.body_bg {
-  -webkit-backdrop-filter: blur(0.5rem);
-          backdrop-filter: blur(0.5rem);
-  color: #0D4B7C;
-}
-
-.fifth-div {
-  display: table;
-  height: 50vh;
-  width: 100vw;
-  background-color: transparent;
-}
-
-#back-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  z-index: 9999;
-  width: 32px;
-  height: 32px;
-  text-align: center;
-  line-height: 30px;
-  background-color: rgb(255, 255, 255);
-  color: #000;
-  cursor: pointer;
-  border: 0;
-  border-radius: 2px;
-  text-decoration: none;
-  transition: opacity 0.2s ease-out;
-  opacity: 0;
-}
-
-#back-to-top:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #000;
-}
-
-#back-to-top.show {
-  opacity: 1;
-}
-
-/* NEW UPDATE */
-.new-update {
-  padding: 20px;
-  text-align: center;
-}
-
 .company_intro-item {
   margin-bottom: 1.5rem;
 }
@@ -9552,6 +9502,83 @@ body {
   font-size: 130%;
 }
 
+.case_study-sect {
+  text-align: center;
+}
+.case_study-sect h2 {
+  font-size: calc(1rem + 0.5vw);
+  color: #0D4B7C;
+  padding: 1.5rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.case_study-sect p {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.case_study-inner {
+  background-color: #ffffff;
+  flex-wrap: wrap;
+}
+
+.case_study-col {
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.case_study-col {
+  width: 25%;
+  padding: 0.5rem;
+}
+
+.case_card-a, .case_card-b {
+  display: inline-block;
+  background-color: #94caf4;
+  width: 100%;
+  overflow: hidden;
+}
+.case_card-a:before, .case_card-a:after, .case_card-b:before, .case_card-b:after {
+  transition: all 0.3s linear;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  transform: translate(0);
+  left: 0;
+}
+.case_card-a:before, .case_card-b:before {
+  content: "";
+  background: rgb(13, 75, 124);
+  background: linear-gradient(0deg, rgba(13, 75, 124, 0.8267682073) 31%, rgba(0, 0, 0, 0.112482493) 95%);
+}
+.case_card-a:after, .case_card-b:after {
+  visibility: hidden;
+  content: "casestudy";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(2.5rem + 0.5vw);
+}
+.case_card-a:hover:after, .case_card-b:hover:after {
+  visibility: visible !important;
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.case_card-a {
+  height: 300px;
+  overflow: hidden;
+}
+
+.case_card-b {
+  height: 400px;
+  overflow: hidden;
+}
+
 @media (max-width: 992px) {
   .intro_sect [class*=col-] {
     padding: 1rem 12px;
@@ -9563,6 +9590,9 @@ body {
     width: 100vw;
     background-size: cover;
     background-position: right;
+  }
+  .case_study-col {
+    width: 50%;
   }
 }
 @media (max-width: 576px) {
@@ -9587,5 +9617,8 @@ body {
   }
   .first-div .first-inner-div p {
     font-size: calc(2rem + 0.5vw);
+  }
+  .case_study-col {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

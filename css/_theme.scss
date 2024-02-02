@@ -1,6 +1,6 @@
 @font-face {
-    font-family: DancingScript-Regular;
-    src: url(../fonts/DancingScript-Regular.ttf);
+    font-family: BrandonText-Regular;
+    src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
 
 }
 // @font-face {
@@ -36,7 +36,16 @@
 
 
 body{
-    font-family: DancingScript-Regular, sans-serif;
+    font-family: BrandonText-Regular, sans-serif;
+}
+
+.heading_sect{
+    text-align: left;
+    h2{
+        font-size: calc(1.5rem + .5vw);
+        // color: $theme-dark-blue;
+        text-transform: uppercase;
+    }
 }
 
 .ps_r{
@@ -84,13 +93,30 @@ body{
 }
 
 .sub_heading{
-    font-family: DancingScript-Regular, sans-serif;
+    // font-family: DancingScript-Regular, sans-serif;
     font-size: calc(1.5rem + .5vw);
     color: $theme-dark-blue;
     font-weight: 600;
     text-transform: uppercase;
     
 
+}
+
+.ps_absolute{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.img_object-fit{
+    object-fit: cover;
+}
+
+.flex_col-r{
+    // flex-direction: column-reverse!important;
 }
 
 .heading_sect{
@@ -105,7 +131,7 @@ body{
     }
 
     p{
-        font-family: DancingScript-Regular, sans-serif;
+        // font-family: DancingScript-Regular, sans-serif;
         font-size: calc(.9rem + .5vw);
     }
 }
