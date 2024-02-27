@@ -434,3 +434,33 @@ inView.threshold(0);
       }, 700);
     });
   }
+
+
+
+
+
+
+  // recent blogs 
+
+  var slider1 = new Swiper ('.slider1', {
+    effect: 'slide',
+    loop: 'true',
+
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    
+    // pagination: {
+    //   el: '.swiper-pagination',
+    // },
+    
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+});

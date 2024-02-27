@@ -28,9 +28,9 @@
 
 //styling of preloader section
 
-// body{
-//   font-family: DancingScript-Regular, sans-serif;
-// }
+body{
+  font-family: BrandonText-Regular, sans-serif !important;
+}
 
 .preloader {
   position: fixed;
@@ -191,8 +191,8 @@
   z-index: 100;
 }
 
-.navbar{
-  .container-fluid{
+.navbar {
+  .container-fluid {
     padding: 0;
   }
 }
@@ -206,7 +206,6 @@
 .navbar-expand-lg .navbar-nav .nav-link {
   color: $theme-dark-blue;
   text-transform: uppercase;
-  font-family: Raleway-Regular;
 
   &:hover {
     color: $theme-light-blue;
@@ -219,8 +218,8 @@
 
 //styling of video_sect
 
-.hero_text-sect{
-  p{
+.hero_text-sect {
+  p {
     margin-bottom: 3rem;
   }
 }
@@ -231,13 +230,14 @@
   height: 100vh;
 
   overflow: hidden;
+
   .hero_text-sect {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    color: white!important;
+    color: white !important;
 
     .heading_main {
       text-transform: capitalize;
@@ -257,8 +257,8 @@
     inset: 0;
     // width: 100%;
     // height: calc(100vh - 1px);
-    background: rgb(13,75,124);
-    background: linear-gradient(90deg, rgba(13,75,124,1) 38%, rgba(116,177,224,0.7455357142857143) 100%);
+    background: rgb(13, 75, 124);
+    background: linear-gradient(90deg, rgba(13, 75, 124, 1) 38%, rgba(116, 177, 224, 0.7455357142857143) 100%);
   }
 
 
@@ -273,12 +273,13 @@
 
 //styling of intro_sect section
 
-.intro_image{
+.intro_image {
 
-  picture{
+  picture {
     z-index: 1;
     display: block;
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       inset: 0;
@@ -300,7 +301,7 @@
 @keyframes simple-move {
   0% {
     outline: 8px solid rgba($color: $theme-dark-blue, $alpha: 1);
-    transform: translate(-2px, 0px); 
+    transform: translate(-2px, 0px);
   }
 
   50% {
@@ -314,14 +315,14 @@
   }
 }
 
-.intro_sect{
+.intro_sect {
   background-color: $bg;
 }
 
-.intro_text{
-  strong{
+.intro_text {
+  strong {
     color: lighten($color: #000000, $amount: 30%);
-    
+
   }
 }
 
@@ -336,16 +337,16 @@
   border-bottom-color: lighten($color: $theme-dark-blue, $amount: 10%);
   background-color: $white;
 
-  h2{
+  h2 {
 
-      font-size: 5rem;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke: 2px $theme-dark-blue;
-      -moz-text-fill-color: transparent;
-      text-transform: capitalize;
-      font-size: calc(4.5rem + 1vw);
-      white-space: nowrap;
-      transform: translateX(100%);
+    font-size: 5rem;
+    -webkit-text-fill-color: $theme-dark-blue;
+    -webkit-text-stroke: 2px $theme-dark-blue;
+    -moz-text-fill-color: transparent;
+    text-transform: capitalize;
+    font-size: calc(4.5rem + 1vw);
+    white-space: nowrap;
+    transform: translateX(100%);
   }
 }
 
@@ -356,19 +357,20 @@
 
 
 
-.intro_description{
+.intro_description {
   background-color: $bg;
   text-align: center;
-  .sub_heading{
+
+  .sub_heading {
     margin-bottom: 0;
   }
 
-  .description_para{
-    color: $white!important;
+  .description_para {
+    color: $white !important;
   }
 }
 
-.intro_sect{
+.intro_sect {
   // min-height: 100vh;
   width: 100%;
   text-align: center;
@@ -378,96 +380,116 @@
 
 
 
-.inner{
-  min-height:100vh;
-	margin:auto;
+.inner {
+  min-height: 100vh;
+  margin: auto;
   overflow: hidden;
-	position:relative;
-  border-bottom:1px solid #000;
+  position: relative;
+  border-bottom: 1px solid #000;
 }
 
-.fixed1{
+.fixed1 {
   width: 100%;
   overflow-x: hidden;
 }
 
-.fixed2{
+.fixed2 {
   width: 100%;
   overflow-x: hidden;
 }
 
-.fixed3{
+.fixed3 {
   width: 100%;
   overflow-x: hidden;
 }
 
-.fixed1,.panel-1 {
-	background:url('../img/chess-blue.jpeg') no-repeat 50% 50%;
+.fixed1,
+.panel-1 {
+  background: url('../img/chess-blue.jpeg') no-repeat 50% 50%;
 }
 
-.fixed2,.panel-2 {
-	background:url('../img/services-bg.jpeg') no-repeat 50% 50%;
+.fixed2,
+.panel-2 {
+  background: url('../img/services-bg.jpeg') no-repeat 50% 50%;
 }
 
-.fixed3,.panel-3 {
-	background:url('../img/modal5.png') no-repeat 50% 50%;
+.fixed3,
+.panel-3 {
+  background: url('../img/modal5.png') no-repeat 50% 50%;
 }
 
-.panel{background-attachment:fixed;	background-size:cover;
+.panel {
+  background-attachment: fixed;
+  background-size: cover;
   overflow: hidden;
 }
-.touch .panel{background:none;}
+
+.touch .panel {
+  background: none;
+}
+
 /*
 
 /* IOS  bounce - on first scroll ios slides element a little and leaves a gap so I've oversized it a little to make it smoother*/
 .fixedBG {
-	position:fixed;
-	top:auto;
-	left:0;
-	right:0;
-	bottom:-10vh;
-	width:100%;
-	height:110vh;
-	background-size:cover;
-	z-index:-1;
-	opacity:0;
-	transition:opacity 1.5s ease;
-	transform:translateY(-10vh);
+  position: fixed;
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: -10vh;
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 1.5s ease;
+  transform: translateY(-10vh);
 }
 
-.touch .fixedBG{display:block;}
+.touch .fixedBG {
+  display: block;
+}
+
 .fixedON {
-	opacity:1;
-}
-@media screen and (max-width:1320px){
-	.panel{margin:0 20px;}		
+  opacity: 1;
 }
 
-@media screen and (max-width:680px){
-	h1{font-size:1.8rem;padding:.3em}	
+@media screen and (max-width:1320px) {
+  .panel {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  h1 {
+    font-size: 1.8rem;
+    padding: .3em
+  }
 }
 
 
 
-.intro_items{
+.intro_items {
   text-align: center;
 }
 
 
 @media (min-width: 0) and (max-width: 767px) {
-  
+
   .down-arrow {
     font-size: 20px !important;
   }
 }
+
 /* Resize in Tablet View */
 
 @media (min-width: 768px) and (max-width: 991px) {
-  
+
   .down-arrow {
     font-size: 30px !important;
   }
 }
+
 /* Line Separators CSS */
 
 .line-separator {
@@ -478,6 +500,7 @@
   margin: 20px auto;
   border-bottom: 1px solid grey;
 }
+
 /* First Wrap Background */
 
 .first-wrap {
@@ -487,14 +510,15 @@
   background-attachment: fixed;
   // background-attachment: scroll;
   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 50% 50%;
-   -webkit-background-attachment: local; 
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-background-attachment: local;
 
   //  -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
 }
+
 /* Second Wrap Background */
 
 .second-wrap {
@@ -505,12 +529,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  -webkit-background-attachment: local; 
+  -webkit-background-attachment: local;
 
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
   // -o-background-size: cover;
 }
+
 /* Third Wrap Background */
 
 .third-wrap {
@@ -521,7 +546,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  -webkit-background-attachment: local; 
+  -webkit-background-attachment: local;
 
   // -webkit-background-size: cover;
   // -moz-background-size: cover;
@@ -533,6 +558,7 @@
   height: 100vh;
   // width: 100vw;
   background-color: transparent;
+
   .first-inner-div {
     position: absolute;
     top: 50%;
@@ -545,12 +571,13 @@
     font-size: calc(1.5rem + .5vw);
     font-weight: bold;
     backdrop-filter: blur(4px);
-    
+
 
     .down-arrow {
       font-size: 40px;
       color: #fff;
     }
+
     p {
       letter-spacing: 1px;
       padding: 3rem 0;
@@ -568,7 +595,7 @@
   height: 50vh;
   width: 100%;
   background-color: rgba(237, 239, 246, 0.7);
-  
+
   p {
     display: table-cell;
     vertical-align: middle;
@@ -592,7 +619,8 @@
   display: table;
   height: 50vh;
   width: 100%;
-  background-color: rgba(225, 225, 225, 0.5);
+  background-color: rgba(225, 225, 225, 0.9);
+
   p {
     display: table-cell;
     vertical-align: middle;
@@ -606,78 +634,82 @@
 }
 
 
-.company_intro-item{
+.company_intro-item {
   margin-bottom: 1.5rem;
 
-  .intro_title{
+  .intro_title {
     color: $theme-dark-blue;
     font-weight: 600;
   }
 
-  .intro_title{
+  .intro_title {
     font-size: calc(2rem + .5vw);
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
 
-  span{
+  span {
     font-size: calc(.75rem + .5vw);
     line-height: 1.2;
 
-    strong{
+    strong {
       display: block;
       color: $theme-dark-blue;
       font-size: 130%;
       // margin-bottom: .5rem;
     }
   }
-  
+
 }
 
 
 
 //styling of case study section
 
-.case_study-sect{
+.case_study-sect {
   text-align: center;
-  h2{
+
+  h2 {
     font-size: calc(1rem + .5vw);
     color: $theme-dark-blue;
     padding: 1.5rem 0;
     text-transform: uppercase;
     font-weight: bold;
   }
-  p{
+
+  p {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 1rem;
   }
 }
 
-.case_study-inner{
+.case_study-inner {
   background-color: $white;
   flex-wrap: wrap;
 }
 
-.case_study-col{
+.case_study-col {
   gap: 2rem;
   flex-direction: column;
 }
 
-.case_study-col{
+.case_study-col {
   width: 25%;
   padding: .5rem;
 }
 
-.case_card-a, .case_card-b{
+.case_card-a,
+.case_card-b {
   display: inline-block;
-  
+
   background-color: lighten($color: $theme-dark-blue, $amount: 50%);
   width: 100%;
   overflow: hidden;
-  
 
-  &:before, &:after{
+
+  &:before,
+  &:after {
     transition: all .3s linear;
     width: 100%;
     height: 100%;
@@ -689,61 +721,140 @@
   }
 
 
-  &:before{
+  &:before {
     content: '';
-    background: rgb(13,75,124);
-    background: linear-gradient(0deg, rgba(13,75,124,0.8267682072829132) 31%, rgba(0,0,0,0.11248249299719892) 95%);
+    background: rgb(13, 75, 124);
+    background: linear-gradient(0deg, rgba(13, 75, 124, 0.467682072829132) 31%, rgba(0, 0, 0, 0.31248249299719892) 50%);
   }
 
 
-  &:after{
+  &:after {
     visibility: hidden;
     content: 'casestudy';
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: calc(2.5rem + .5vw);
-    
-    
+
+
   }
 
-  &:hover{
+  &:hover {
 
-    
 
-     &:after{
-        visibility: visible!important;
-        color: $white;
-        backdrop-filter: blur(10px);
+
+    &:after {
+      visibility: visible !important;
+      color: $white;
+      backdrop-filter: blur(10px);
     }
 
   }
 }
 
 
-.case_card-a{
+.case_card-a {
   height: 300px;
   overflow: hidden;
-  
+
 }
 
 
 
 
-.case_card-b{
+.case_card-b {
   height: 400px;
   overflow: hidden;
-  
+
 }
 
 
+.main_img-sect{
+  height: 50vh;
+  &:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: .4);
+  }
+}
+
+
+//styling of clients_responce section
+
+.clients_responce {
+  background-image: url(../img/bga.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+  background-color: lighten($color: $theme-dark-blue, $amount: 50%);
+
+  .heading_sect {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-weight: bold;
+      color: $theme-dark-blue;
+    }
+
+    p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: calc(.8rem + .25vw);
+    }
+  }
+
+  .blogs_inner {
+    // background-color: $theme-light-blue;
+    padding: 1rem;
+  }
+
+
+  .swiper-slide {
+    p {
+      position: relative;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: calc(1rem + .5vw);
+      background-color: rgba($color: $theme-light-blue, $alpha: .6);
+      color: $theme-dark-blue;
+
+      
+
+      &::before {
+        content: open-quote;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: $theme-dark-blue;
+        font-family: 'Black And White Picture', sans-serif;
+      }
+
+      &::after {
+        content: close-quote;
+        font-size: 2.3rem;
+        font-weight: bold;
+        color: $theme-dark-blue;
+        font-family: 'Black And White Picture', sans-serif;
+      }
+    }
+
+
+  }
+}
+
+
+//styling of recient_blogs section
 
 
 
 
 @media(max-width: 992px) {
-  .intro_sect{
-    [class*="col-"]{
+  .intro_sect {
+    [class*="col-"] {
       padding: 1rem 12px;
     }
   }
@@ -759,9 +870,9 @@
     background-position: right;
   }
 
-    //styling of case_study section
+  //styling of case_study section
 
-  .case_study-col{
+  .case_study-col {
     width: 50%;
   }
 
@@ -788,19 +899,19 @@
 
   //styling of video_sect
 
-  .video_sect{
+  .video_sect {
 
 
-   video {
-     margin-left: 0;
-   }
+    video {
+      margin-left: 0;
+    }
 
   }
 
   .video_sect .hero_text-sect .heading_main {
     font-size: calc(2rem + .5vw);
-    
-    small{
+
+    small {
       font-size: 40%;
     }
   }
@@ -808,46 +919,28 @@
   //styling of company_slogan section
 
   .company_slogan {
-    
-  
-    h2{
-  
-        
-        font-size: calc(5.5rem + 1vw);
-        
+
+
+    h2 {
+
+
+      font-size: calc(5.5rem + 1vw);
+
     }
   }
 
 
   //styling of company_intro section
 
-  .first-div .first-inner-div p{
+  .first-div .first-inner-div p {
     font-size: calc(2rem + .5vw);
   }
 
   //styling of case_study section
 
-  .case_study-col{
+  .case_study-col {
     width: 100%;
   }
 
-  
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
