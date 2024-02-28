@@ -9026,12 +9026,17 @@ th, td {
 }
 
 .modal-dialog {
-  max-width: 80vw;
+  max-width: 100%;
   margin: 1.75rem auto;
 }
 
 .case-study-desc {
   overflow-y: scroll;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 576px) {
@@ -9555,9 +9560,10 @@ body {
 
 .case_study-sect {
   text-align: center;
+  background-color: #eaeaea;
 }
 .case_study-sect h2 {
-  font-size: calc(1rem + 0.5vw);
+  font-size: calc(2rem + 0.5vw);
   color: #0D4B7C;
   padding: 1.5rem 0;
   text-transform: uppercase;
@@ -9627,12 +9633,12 @@ body {
 }
 
 .case_card-a {
-  height: 300px;
+  height: 400px;
   overflow: hidden;
 }
 
 .case_card-b {
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 }
 
@@ -9735,6 +9741,9 @@ body {
     font-size: calc(2rem + 0.5vw);
   }
   .case_study-col {
+    width: 100%;
+  }
+  .case_study-sect p {
     width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -668,9 +668,10 @@ body{
 
 .case_study-sect {
   text-align: center;
+  background-color: #eaeaea;
 
   h2 {
-    font-size: calc(1rem + .5vw);
+    font-size: calc(2rem + .5vw);
     color: $theme-dark-blue;
     padding: 1.5rem 0;
     text-transform: uppercase;
@@ -754,7 +755,7 @@ body{
 
 
 .case_card-a {
-  height: 300px;
+  height: 400px;
   overflow: hidden;
 
 }
@@ -763,7 +764,7 @@ body{
 
 
 .case_card-b {
-  height: 400px;
+  height: 500px;
   overflow: hidden;
 
 }
@@ -939,6 +940,10 @@ body{
   //styling of case_study section
 
   .case_study-col {
+    width: 100%;
+  }
+
+  .case_study-sect p{
     width: 100%;
   }
 
