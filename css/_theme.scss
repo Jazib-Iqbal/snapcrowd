@@ -118,17 +118,21 @@ body{
 
 
 .heading_sect{
+    
     .heading_main{
         margin-bottom: 1rem;
+        
         small{
+            letter-spacing: .1rem;
             display: block;
-            margin-bottom: 1rem;
-            font-size: 30%;
+            font-size: 50%;
+            font-weight: bold;
             color: lighten($color: $theme-dark-blue, $amount: 60%);
         }
     }
 
     p{
+        letter-spacing: .1rem;
         // font-family: DancingScript-Regular, sans-serif;
         font-size: calc(.9rem + .5vw);
     }
@@ -219,6 +223,17 @@ ul,li,h1,h2,h3,h4,h5,h6,p{
 @media(max-width: 576px) {
     .btn_bordered{
         font-size: calc(1rem + .5vw);
+    }
+
+
+    .heading_sect{
+        .heading_main{
+            small{
+                text-transform: normal;
+                font-size: 60%;
+            }
+        }
+
     }
 }
 

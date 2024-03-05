@@ -8955,12 +8955,14 @@ body {
   margin-bottom: 1rem;
 }
 .heading_sect .heading_main small {
+  letter-spacing: 0.1rem;
   display: block;
-  margin-bottom: 1rem;
-  font-size: 30%;
+  font-size: 50%;
+  font-weight: bold;
   color: #c2e1f9;
 }
 .heading_sect p {
+  letter-spacing: 0.1rem;
   font-size: calc(0.9rem + 0.5vw);
 }
 
@@ -9042,6 +9044,10 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 @media (max-width: 576px) {
   .btn_bordered {
     font-size: calc(1rem + 0.5vw);
+  }
+  .heading_sect .heading_main small {
+    text-transform: normal;
+    font-size: 60%;
   }
 }
 body {
@@ -9501,7 +9507,7 @@ body {
   display: table;
   height: 50vh;
   width: 100%;
-  background-color: rgba(237, 239, 246, 0.7);
+  background-color: rgba(237, 239, 246, 0.9);
 }
 .second-div p {
   display: table-cell;
@@ -9572,7 +9578,7 @@ body {
 .case_study-sect p {
   width: 80%;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .case_study-inner {
@@ -9770,9 +9776,6 @@ body {
   }
   .video_sect .hero_text-sect .heading_main {
     font-size: calc(2rem + 0.5vw);
-  }
-  .video_sect .hero_text-sect .heading_main small {
-    font-size: 40%;
   }
   .company_slogan h2 {
     font-size: calc(5.5rem + 1vw);

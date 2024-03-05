@@ -594,7 +594,7 @@ body{
   display: table;
   height: 50vh;
   width: 100%;
-  background-color: rgba(237, 239, 246, 0.7);
+  background-color: rgba(237, 239, 246, 0.9);
 
   p {
     display: table-cell;
@@ -681,7 +681,7 @@ body{
   p {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -895,6 +895,7 @@ body{
 
 .footer_strip{
   background-color: $theme-dark-blue;
+  
 }
 
 
@@ -968,9 +969,7 @@ body{
   .video_sect .hero_text-sect .heading_main {
     font-size: calc(2rem + .5vw);
 
-    small {
-      font-size: 40%;
-    }
+
   }
 
   //styling of company_slogan section
