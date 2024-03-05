@@ -816,13 +816,30 @@ body{
 
 
   .swiper-slide {
+
+    
+      img{
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        object-fit: cover;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 1;
+        // border-radius: 50%;
+      }
+    
     p {
       position: relative;
       padding: 1.5rem;
+      padding-top: 3rem;
       text-align: center;
       font-size: calc(1rem + .5vw);
       background-color: rgba($color: $theme-light-blue, $alpha: .6);
       color: $theme-dark-blue;
+
+      
 
       
 
@@ -850,6 +867,36 @@ body{
 
 //styling of recient_blogs section
 
+//styling of footer section
+
+.footer_list{
+  gap: 2rem;
+
+  i{
+    font-size: 2.5rem;
+    color: $theme-dark-blue;
+    transition: all .3s linear;
+    &:hover{
+      color: $theme-light-blue;
+    }
+  }
+}
+
+.footer_description{
+  strong{
+    color: $theme-dark-blue;
+    text-transform: uppercase;
+  }
+}
+
+.footer_logo{
+  width: calc(10rem + 7vw);
+}
+
+.footer_strip{
+  background-color: $theme-dark-blue;
+}
+
 
 
 
@@ -875,6 +922,15 @@ body{
 
   .case_study-col {
     width: 50%;
+  }
+
+
+  //styling of footer section
+
+  .footer_sect {
+    [class*="col-"] {
+      padding: 1rem 12px;
+    }
   }
 
 }

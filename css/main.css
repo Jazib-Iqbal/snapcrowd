@@ -9678,9 +9678,21 @@ body {
 .clients_responce .blogs_inner {
   padding: 1rem;
 }
+.clients_responce .swiper-slide img {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 1;
+}
 .clients_responce .swiper-slide p {
   position: relative;
   padding: 1.5rem;
+  padding-top: 3rem;
   text-align: center;
   font-size: calc(1rem + 0.5vw);
   background-color: rgba(116, 177, 224, 0.6);
@@ -9701,6 +9713,31 @@ body {
   font-family: "Black And White Picture", sans-serif;
 }
 
+.footer_list {
+  gap: 2rem;
+}
+.footer_list i {
+  font-size: 2.5rem;
+  color: #0D4B7C;
+  transition: all 0.3s linear;
+}
+.footer_list i:hover {
+  color: #74B1E0;
+}
+
+.footer_description strong {
+  color: #0D4B7C;
+  text-transform: uppercase;
+}
+
+.footer_logo {
+  width: calc(10rem + 7vw);
+}
+
+.footer_strip {
+  background-color: #0D4B7C;
+}
+
 @media (max-width: 992px) {
   .intro_sect [class*=col-] {
     padding: 1rem 12px;
@@ -9715,6 +9752,9 @@ body {
   }
   .case_study-col {
     width: 50%;
+  }
+  .footer_sect [class*=col-] {
+    padding: 1rem 12px;
   }
 }
 @media (max-width: 576px) {
