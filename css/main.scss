@@ -415,7 +415,7 @@ body{
 
 .fixed3,
 .panel-3 {
-  background: url('../img/modal5.png') no-repeat 50% 50%;
+  background: url('../img/client-model.jpg') no-repeat 50% 50%;
 }
 
 .panel {
@@ -668,7 +668,7 @@ body{
 
 .case_study-sect {
   text-align: center;
-  background-color: #eaeaea;
+  background-color: lighten($color: #000000, $amount: 95%);
 
   h2 {
     font-size: calc(2rem + .5vw);
@@ -784,18 +784,213 @@ body{
 }
 
 
+//styling of our_clients section
+
+.sliding-info-cards{
+  width: calc(100vw - 2rem);
+  margin: 0 auto;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 0;
+
+}
+
+
+.info-cards {
+  margin:0 0 0 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between; 
+  animation: 35s infinite-move infinite linear ;  
+  gap: 1rem;
+
+}
+.sliding-info-cards:hover .info-cards{
+  animation-play-state: paused;
+}
+@keyframes infinite-move {
+  0%{
+      transform: translateX(0%);
+  }
+  
+  100%{
+      transform: translateX(-100%);
+  }
+ 
+}
+
+.info-card:nth-child(1) { 
+  width: 20rem;
+}
+.info-card:nth-child(2) { 
+  width: 25rem;
+}
+.info-card:nth-child(3) { 
+  width: 30rem;
+}
+.info-card:nth-child(4) { 
+  width: 35rem;
+}
+
+
+.sliding-info-cards-further{
+  .info-card:nth-child(1) { 
+    width: 35rem;
+    
+  }
+  .info-card:nth-child(2) { 
+    width: 25rem;
+  }
+  .info-card:nth-child(3) { 
+    width: 30rem;
+  }
+  .info-card:nth-child(4) { 
+    width: 20rem;
+  }
+  .info-cards {
+    animation: 45s infinite-move-a infinite linear ;  
+  
+  }
+
+  @keyframes infinite-move-a {
+    0%{
+        transform: translateX(0%);
+    }
+    
+    100%{
+        transform: translateX(-100%);
+    }
+   
+  }
+}
+.info-card{
+  margin: .5rem 0;
+  padding: 1rem 2rem;
+  background-color: $theme-dark-blue;
+  border-radius: 1rem;
+  align-items: center;
+  color: $white;
+  transition: 300ms all linear;
+
+  h3{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+}
+.info-card:hover{
+  transform: scale(1.05);
+}
+
+
+
+// Button 
+.go-down-btn {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 14rem;
+    height: 14rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: 1px solid $black;
+    border-radius: 50%;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    width: 8rem!important;
+    height: 8rem!important;
+    color: lighten($color: #000000, $amount: 15%);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 8rem;
+    outline: 1px solid $black;
+    font-size: 4rem;
+    z-index: 1!important;
+
+  }
+
+  svg {
+    position: relative;
+    z-index: 10;
+    display: block;
+  }
+
+  text {
+    font-size: 10px;
+    transform-origin: center;
+    
+  }
+}
+
+
+
+// Animation
+@keyframes rotate-btn {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.go-down-btn text {
+  animation: rotate-btn 10s linear infinite;
+}
+
+.hollow_text{
+  width: 5rem!important;
+  height: 5rem!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1!important;
+
+  i{
+    font-size: 2.5rem;
+  }
+}
+
+
+.field_experience{
+  h2{
+    color: $theme-dark-blue;
+    margin-bottom: 1rem;
+  }
+
+  p{
+    color: lighten($color: #000000, $amount: 40%);
+    strong{
+      color: $theme-dark-blue;
+    }
+  }
+}
+
 //styling of clients_responce section
 
 .clients_responce {
   background-image: url(../img/bga.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10rem 0;
+  // padding: 10rem 0;
   background-color: lighten($color: $theme-dark-blue, $amount: 50%);
 
   .heading_sect {
     text-align: center;
-    margin-bottom: 2rem;
+    padding: 2rem 0;
 
     h2 {
       font-weight: bold;
@@ -1002,5 +1197,34 @@ body{
     width: 100%;
   }
 
+
+  .info-card:nth-child(1) { 
+    width: 70vw;
+  }
+  .info-card:nth-child(2) { 
+    width: 80vw;
+  }
+  .info-card:nth-child(3) { 
+    width: 70vw;
+  }
+  .info-card:nth-child(4) { 
+    width: 80vw;
+  }
+
+  .sliding-info-cards-further{
+    .info-card:nth-child(1) { 
+      width: 80vw;
+      
+    }
+    .info-card:nth-child(2) { 
+      width: 70vw;
+    }
+    .info-card:nth-child(3) { 
+      width: 80vw;
+    }
+    .info-card:nth-child(4) { 
+      width: 70vw;
+    }
+  }
 
 }
