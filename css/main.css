@@ -9566,7 +9566,7 @@ body {
 
 .case_study-sect {
   text-align: center;
-  background-color: #f2f2f2;
+  background-color: #eaeaea;
 }
 .case_study-sect h2 {
   font-size: calc(2rem + 0.5vw);
@@ -9619,7 +9619,7 @@ body {
 .case_card-b:before {
   content: "";
   background: rgb(13, 75, 124);
-  background: linear-gradient(0deg, rgba(13, 75, 124, 0.4676820728) 31%, rgba(0, 0, 0, 0.312482493) 50%);
+  background: linear-gradient(0deg, rgba(13, 75, 124, 0.2676820728) 21%, rgba(0, 0, 0, 0.12482493) 30%);
 }
 .case_card-a:after,
 .case_card-b:after {
@@ -9805,7 +9805,7 @@ body {
   animation: rotate-btn 10s linear infinite;
 }
 
-.hollow_text {
+.field_experience-sect .hollow_text {
   width: 5rem !important;
   height: 5rem !important;
   display: flex;
@@ -9813,7 +9813,7 @@ body {
   align-items: center;
   z-index: 1 !important;
 }
-.hollow_text i {
+.field_experience-sect .hollow_text i {
   font-size: 2.5rem;
 }
 
@@ -9954,29 +9954,5 @@ body {
   }
   .case_study-sect p {
     width: 100%;
-  }
-  .info-card:nth-child(1) {
-    width: 70vw;
-  }
-  .info-card:nth-child(2) {
-    width: 80vw;
-  }
-  .info-card:nth-child(3) {
-    width: 70vw;
-  }
-  .info-card:nth-child(4) {
-    width: 80vw;
-  }
-  .sliding-info-cards-further .info-card:nth-child(1) {
-    width: 80vw;
-  }
-  .sliding-info-cards-further .info-card:nth-child(2) {
-    width: 70vw;
-  }
-  .sliding-info-cards-further .info-card:nth-child(3) {
-    width: 80vw;
-  }
-  .sliding-info-cards-further .info-card:nth-child(4) {
-    width: 70vw;
   }
 }/*# sourceMappingURL=main.css.map */

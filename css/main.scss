@@ -668,7 +668,7 @@ body{
 
 .case_study-sect {
   text-align: center;
-  background-color: lighten($color: #000000, $amount: 95%);
+  background-color: #eaeaea;
 
   h2 {
     font-size: calc(2rem + .5vw);
@@ -725,7 +725,7 @@ body{
   &:before {
     content: '';
     background: rgb(13, 75, 124);
-    background: linear-gradient(0deg, rgba(13, 75, 124, 0.467682072829132) 31%, rgba(0, 0, 0, 0.31248249299719892) 50%);
+    background: linear-gradient(0deg, rgba(13, 75, 124, 0.267682072829132) 21%, rgba(0, 0, 0, 0.1248249299719892) 30%);
   }
 
 
@@ -782,6 +782,7 @@ body{
     background-color: rgba($color: #000000, $alpha: .4);
   }
 }
+
 
 
 //styling of our_clients section
@@ -951,7 +952,7 @@ body{
   animation: rotate-btn 10s linear infinite;
 }
 
-.hollow_text{
+.field_experience-sect .hollow_text{
   width: 5rem!important;
   height: 5rem!important;
   display: flex;
@@ -1058,6 +1059,8 @@ body{
 
   }
 }
+
+
 
 
 //styling of recient_blogs section
@@ -1197,34 +1200,5 @@ body{
     width: 100%;
   }
 
-
-  .info-card:nth-child(1) { 
-    width: 70vw;
-  }
-  .info-card:nth-child(2) { 
-    width: 80vw;
-  }
-  .info-card:nth-child(3) { 
-    width: 70vw;
-  }
-  .info-card:nth-child(4) { 
-    width: 80vw;
-  }
-
-  .sliding-info-cards-further{
-    .info-card:nth-child(1) { 
-      width: 80vw;
-      
-    }
-    .info-card:nth-child(2) { 
-      width: 70vw;
-    }
-    .info-card:nth-child(3) { 
-      width: 80vw;
-    }
-    .info-card:nth-child(4) { 
-      width: 70vw;
-    }
-  }
 
 }
