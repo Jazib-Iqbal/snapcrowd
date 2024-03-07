@@ -1,0 +1,22 @@
+
+.bolg_card{
+
+    margin: 1rem 0;
+
+    .blog_card-img-sect{
+        padding-top: 60%;
+        background-color: lighten($color: $theme-light-blue, $amount: 25%);
+        width: 100%;
+    
+        .blog_card-img{
+            position: absolute;
+            inset: 0;
+            
+        }
+    }
+
+    h2{
+        font-weight: bold;
+        font-size: 140%;
+    }
+}

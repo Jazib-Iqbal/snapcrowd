@@ -1,8 +1,9 @@
 @import "scss/bootstrap";
 @import "./colors";
 @import "./theme";
+@import "./blogs";
 // @import "./contact";
-@import "./overlayying-gsap";
+// @import "./overlayying-gsap";
 
 //fonts
 
@@ -28,9 +29,7 @@
 
 //styling of preloader section
 
-body{
-  font-family: BrandonText-Regular, sans-serif !important;
-}
+
 
 .preloader {
   position: fixed;

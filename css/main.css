@@ -8870,11 +8870,19 @@ textarea.form-control-lg {
   }
 }
 @font-face {
-  font-family: BrandonText-Regular;
-  src: url(../fonts/HVD\ Fonts\ -\ BrandonText-Regular.otf);
+  font-family: Montserrat-Regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
 }
 body {
-  font-family: BrandonText-Regular, sans-serif !important;
+  font-family: Montserrat-Regular, sans-serif !important;
 }
 
 .heading_sect {
@@ -8883,6 +8891,15 @@ body {
 .heading_sect h2 {
   font-size: calc(1.5rem + 0.5vw);
   text-transform: uppercase;
+}
+
+.absolute_contant {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .ps_r {
@@ -9050,8 +9067,21 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     font-size: 60%;
   }
 }
-body {
-  font-family: BrandonText-Regular, sans-serif !important;
+.bolg_card {
+  margin: 1rem 0;
+}
+.bolg_card .blog_card-img-sect {
+  padding-top: 60%;
+  background-color: #dcecf7;
+  width: 100%;
+}
+.bolg_card .blog_card-img-sect .blog_card-img {
+  position: absolute;
+  inset: 0;
+}
+.bolg_card h2 {
+  font-weight: bold;
+  font-size: 140%;
 }
 
 .preloader {
